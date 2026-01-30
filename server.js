@@ -70,8 +70,6 @@ const polls = {}; // Store active polls
 let config = {
     godmode_password: "bonzi",
     king_password: "king",
-    trusted_passwords: ["trusted1", "trusted2"],
-    blessed_password: "blessed"
 };
 
 const configPath = path.join(__dirname, 'config', 'config.json');
@@ -362,32 +360,6 @@ io.on('connection', (socket) => {
         }
         // Enable king privileges for this user
         socket.emit('king');
-        break;
-      case 'trusted':
-        // Check password for trusted command
-        if (!args[0]) {
-          socket.emit('alert', { text: 'Did you try password?' });
-          break;
-        }
-        if (!config.trusted_passwords || !config.trusted_passwords.includes(args[0])) {
-          socket.emit('alert', { text: 'Did you try password?' });
-          break;
-        }
-        // Enable trusted privileges for this user
-        socket.emit('trusted');
-        break;
-      case 'blessed':
-        // Check password for blessed command
-        if (!args[0]) {
-          socket.emit('alert', { text: 'Did you try password?' });
-          break;
-        }
-        if (args[0] !== config.blessed_password) {
-          socket.emit('alert', { text: 'Did you try password?' });
-          break;
-        }
-        // Enable blessed privileges for this user
-        socket.emit('blessed');
         break;
       case 'pope':
         // Check if user has admin privileges before allowing pope color

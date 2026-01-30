@@ -1,6 +1,4 @@
 {
     "godmode_password": "bonzi",
     "king_password": "king",
-    "trusted_passwords": ["trusted1", "trusted2"],
-    "blessed_password": "blessed"
 }
