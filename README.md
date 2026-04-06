@@ -1,8 +1,8 @@
-# KhanWORLD
-Basically CyganWORLD but better. This was built off CyganWORLD and had been heavily modified to be much more secure and better, with finally moderation tools.
+# bonzi.gay reconstruction
+This is a high quality replica of bonzi.gay, made by Jim Megatron and UnrealSticky, aiming to be as close as possible to the original bonzi.gay
+The aim is also to be lightweight and not be clusterfucked like 90% of servers, making this better than most of the other servers!
 
-Enjoy, skiddies. I hope you make this for the better. Looking at you, Rafael.
-Default godword is 'bonzi'. Please remember to  change the config beforehand.
+Default godword is 'bonzi' and default kingword is 'king'. Please change them beforehand
 
 ## SETUP
 This is important.
@@ -10,7 +10,7 @@ This is important.
 ```bash
 npm install
 ```
-2. change the godword. if you're lazy you might get banned or skiddied on.
+2. change the godword and kingword. if you're lazy you might get banned or skiddied on.
 
 3. run it!
 ```bash
@@ -31,9 +31,13 @@ By default, the server runs on port 80.
 - `/linux` - Interject about Linux
 - `/owo [name]` - Notice someone's bulge
 - `/asshole [name]` - Call someone an asshole
+- `/hat [hat]` - Changes your hat
 
-### Admin Commands (Requires Godmode)
+### Admin Commands (Requires Godmode or Kingmode)
 - `/godmode [password]` - Enable admin privileges
+- `/kingmode [password]` - Enable basic janny powers
 - `/pope` - Change color to the elite pope color. You will probably get begged for pope if you wear this.
 - `/kick [name] [reason]` - Kick a user
 - `/ban [name] [reason]` - Ban a user's IP for 24 hours
+- `/nuke [name]` - Basically a fancy version of kick
+- `/bless [name]` - Bless a user
