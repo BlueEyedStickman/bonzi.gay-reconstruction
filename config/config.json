@@ -1,4 +1,9 @@
 {
-    "godmode_password": "bonzi",
-    "king_password": "king",
+  "port":80,
+  "godword":"",
+  "kingword":"bonzi",
+  "altlimit": 4,
+  "slowmode": 1000,
+  "namelimit": 25,
+  "charlimit": 2500
 }
